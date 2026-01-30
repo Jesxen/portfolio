@@ -7,10 +7,55 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/*   MOBILE DEFAULT (BASE)       */
+
+
+#about-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#about-title img {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+#about-title .flex-1 {
+  text-align: center;
+}
+
+
+
+@media (min-width: 1024px) {
+  #about-title {
+    flex-direction: row;
+    text-align: left;
+    padding: 1.5rem;
+  }
+
+  #about-title .flex-1 {
+    text-align: left;
+  }
+
+  #about-title img {
+    width: 192px;
+    /* w-48 */
+    height: 192px;
+    /* h-48 */
+    margin: 0;
   }
 }

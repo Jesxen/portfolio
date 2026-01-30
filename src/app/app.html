@@ -1,15 +1,10 @@
-<!-- VIDEO DE FONDO -->
-<video
-  autoplay
-  muted
-  loop
-  playsinline
-  class="fixed inset-0 w-full h-full object-cover -z-10"
->
-  <source src="assets/video.mp4" type="video/mp4">
-</video>
-
-<!-- CONTENEDOR CENTRAL -->
+<img
+  src="assets/bg.jpg"
+  alt="background"
+  class="fixed inset-0 w-full h-full object-cover -z-10 pointer-events-none"
+/>
+<div class="color-overlay"></div>
+<!--Main Content -->
 <div class="relative h-screen flex items-center justify-center p-4 overflow-hidden">
   <app-portfolio></app-portfolio>
 </div>

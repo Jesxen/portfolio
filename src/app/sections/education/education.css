@@ -1,0 +1,68 @@
+/*   MOBILE DEFAULT       */
+
+
+#education-title h4 {
+    text-align: center;
+}
+
+#education-title .education-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.25rem;
+}
+
+#education-title .education-item img {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+}
+
+#education-title .education-item .flex-1 {
+    text-align: center;
+}
+
+#education-title .education-item p:last-child {
+    margin-top: 0.5rem;
+}
+
+
+
+@media (min-width: 1024px) {
+
+    #education-title h4 {
+        text-align: left;
+    }
+
+    #education-title .education-item {
+        flex-direction: row;
+        text-align: left;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+
+    #education-title .education-item img {
+        margin: 0;
+    }
+
+    #education-title .education-item .flex-1 {
+        text-align: left;
+    }
+
+    #education-title .education-item p:last-child {
+        margin-top: 0;
+    }
+}
+
+/* Animation  */
+.education-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.education-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

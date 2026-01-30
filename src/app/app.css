@@ -1,0 +1,15 @@
+.color-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(45deg, #ff0080, #00bfff, #00ff9d);
+  mix-blend-mode: overlay;
+  opacity: 0.4;
+  animation: colorShift 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes colorShift {
+  0% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(180deg); }
+  100% { filter: hue-rotate(360deg); }
+}

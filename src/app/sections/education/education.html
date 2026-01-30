@@ -1,4 +1,4 @@
-<div id="education-title" class="w-full flex flex-col gap-6">
+<div id="education-title" class="w-full flex flex-col gap-6 font-['ABeeZee',sans-serif] text-white">
 
   <!-- TITLE -->
   <h4 class="text-xl font-semibold">My Educations</h4>
@@ -6,27 +6,29 @@
   <!-- EDUCATION LIST -->
   <div class="flex flex-col gap-6">
 
-    <!-- EDUCATION ITEM -->
-    <div class="bg-white/5 p-5 rounded-2xl backdrop-blur-sm border border-white/10 flex items-center gap-4">
+    @for (education of educations; track education.name) {
+
+    <div
+      #educationItem
+      class="education-item bg-white/5 p-5 rounded-2xl backdrop-blur-sm border border-white/10 flex items-center gap-4">
 
       <!-- LOGO -->
-      <img
-        src="assets/images/azad-uni.png"
-        class="w-14 h-14 object-contain"
-      />
+      <img [src]="education.img" class="w-14 h-14 object-contain" />
 
       <!-- TEXT INFO -->
       <div class="flex flex-col flex-1">
-        <p class="text-base font-semibold">Bachelor of Computer Engineering</p>
-        <p class="text-sm text-white/70">Islamic Azad University of Yazd</p>
+        <p class="text-base font-semibold">{{education.name}}</p>
+        <p class="text-sm text-white/70">{{education.institution}}</p>
       </div>
 
       <!-- DATE -->
       <p class="text-sm text-white/60 whitespace-nowrap">
-        2022 Oct – present
+        {{education.date}}
       </p>
 
     </div>
+
+    }
 
   </div>
 </div>

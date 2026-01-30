@@ -4,6 +4,7 @@
 
 #content::-webkit-scrollbar-track {
   background: transparent;
+
 }
 
 #content::-webkit-scrollbar-thumb {
@@ -13,4 +14,82 @@
 
 #content::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.25);
+}
+
+
+@layer utilities {
+  .animate-portfolio {
+    animation: portfolioEnter 0.8s ease forwards;
+  }
+
+  @keyframes portfolioEnter {
+    0% {
+      opacity: 0;
+      transform: scale(0.92) translateY(20px);
+      filter: blur(8px);
+    }
+
+    60% {
+      opacity: 1;
+      transform: scale(1.02) translateY(0);
+      filter: blur(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+
+.w-70\.5,
+.min-w-62\.5 {
+  width: 80px !important;
+  min-width: 80px !important;
+  padding: 0.5rem !important;
+}
+
+
+@media (min-width: 1024px) {
+  .w-70\.5 {
+    width: 282px !important;
+  }
+
+  .min-w-62\.5 {
+    min-width: 250px !important;
+  }
+
+  .w-70\.5,
+  .min-w-62\.5 {
+    padding: 1rem !important;
+  }
+}
+
+.mac-btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+
+.mac-btn i {
+  font-size: 8px;
+  opacity: 0;
+  color: black;
+  transition: opacity 0.2s ease;
+}
+
+
+.mac-btn:hover i {
+  opacity: 1;
+}
+
+.mac-btn:hover {
+  transform: scale(1.15);
 }

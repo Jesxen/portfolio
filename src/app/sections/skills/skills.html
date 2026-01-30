@@ -1,61 +1,15 @@
-<div  class="w-full flex flex-col gap-6 mb-10 font-['ABeeZee',sans-serif] text-white">
+<div class="w-full flex flex-col gap-6 mb-10 font-['ABeeZee',sans-serif] text-white">
 
   <!-- TITLE -->
-  <h4 id="skills-title" class="text-xl font-semibold " >My Skills</h4>
-
+  <h4 id="skills-title" class="text-xl font-semibold ">My Skills</h4>
   <!-- SKILLS GRID -->
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-
+    @for (skill of skills; track skill.name) {
     <!-- SKILL ITEM -->
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/html-icon.png" class="w-8 h-8" />
-      <p class="text-sm">HTML</p>
+    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm skill-item">
+      <img [src]="skill.img" class="w-8 h-8" />
+      <p class="text-sm">{{skill.name}}</p>
     </div>
-
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/tailwind-css-icon.png" class="w-8 h-8" />
-      <p class="text-sm">TailWindCSS</p>
-    </div>
-
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/javascript-icon.png" class="w-8 h-8" />
-      <p class="text-sm">JavaScript</p>
-    </div>
-
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/typescript-icon.png" class="w-8 h-8" />
-      <p class="text-sm">TypeScript</p>
-    </div>
-
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/angular-icon.png" class="w-8 h-8" />
-      <p class="text-sm">Angular</p>
-    </div>
-
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/figma-icon.png" class="w-8 h-8" />
-      <p class="text-sm">Figma</p>
-    </div>
-
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/php-icon.png" class="w-8 h-8" />
-      <p class="text-sm">PHP</p>
-    </div>
-
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/mysql-icon.png" class="w-8 h-8" />
-      <p class="text-sm">MySQL</p>
-    </div>
-
-    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/git-icon.png" class="w-8 h-8" />
-      <p class="text-sm">Git</p>
-    </div>
-
-     <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm">
-      <img src="assets/docker-icon.png" class="w-8 h-8" />
-      <p class="text-sm">Docker</p>
-    </div>
-
+    }
   </div>
 </div>
