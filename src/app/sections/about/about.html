@@ -1,31 +1,39 @@
-<div id="about-title" class="
-    p-6
+<div id="about-title"
+  class="
+    p-4
     rounded-3xl
-    flex
-    flex-row
+    flex flex-col md:flex-row
+    items-center md:items-start
+    gap-6
     bg-[linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab)]
     bg-size-[400%_400%]
     animate-gradient
     mb-10
     font-[ABeeZee]
-  ">
-  <!-- LEFT TEXT -->
-  <div class="flex-1 space-y-4">
-    <h1 class="text-3xl font-bold text-white ">Jesxen</h1>
+  "
+>
 
-    <p class="text-[15px] leading-relaxed text-white/90">
-      Junior Frontend Developer with a focus on UI design. I transform Figma prototypes into functional and responsive
-      interfaces using Angular and TypeScript, continuously learning new technologies and enhancing user experience.
+  <!-- LEFT TEXT -->
+  <div class="flex-1 space-y-3 text-center md:text-left max-w-95 md:max-w-none">
+    <h1 class="text-2xl md:text-3xl font-bold text-white">Jesxen</h1>
+
+    <!-- Texto más compacto en móvil -->
+    <p class="text-[14px] md:text-[15px] leading-relaxed text-white/90">
+      Junior Frontend Developer focused on UI design. I turn Figma prototypes into responsive interfaces using Angular and TypeScript.
+      <span class="hidden md:inline">
+        Always learning new technologies and improving user experience.
+      </span>
     </p>
 
     <a href="assets/cv.pdf" download>
       <button
-        class="px-5 py-2 rounded-xl bg-black/40 hover:bg-black/30 transition font-medium shadow-md text-white cursor-pointer">
+        class="px-4 py-2 rounded-xl bg-black/40 hover:bg-black/30 transition font-medium shadow-md text-white cursor-pointer">
         Download Resume
       </button>
     </a>
   </div>
 
   <!-- RIGHT IMAGE -->
-  <img src="assets/develop.png" class="w-48 h-48 object-contain drop-shadow-xl" />
+  <img src="assets/develop.png"
+    class="w-28 h-28 md:w-48 md:h-48 object-contain drop-shadow-xl" />
 </div>

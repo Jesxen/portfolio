@@ -1,9 +1,10 @@
 <div class="w-full flex flex-col gap-6 mb-10 font-['ABeeZee',sans-serif] text-white">
 
   <!-- TITLE -->
-  <h4 id="skills-title" class="text-xl font-semibold ">My Skills</h4>
+  <h4 id="skills-title" class="text-xl font-semibold">My Skills</h4>
+
   <!-- SKILLS GRID -->
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
     @for (skill of skills; track skill.name) {
     <!-- SKILL ITEM -->
     <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl backdrop-blur-sm skill-item">
@@ -12,4 +13,5 @@
     </div>
     }
   </div>
+
 </div>
