@@ -1,59 +1,51 @@
-# PortfolioApp
+#  Personal Portfolio — Jesxen
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+This is my personal portfolio built with **Angular**, **TailwindCSS**, and custom animations.  
+It showcases my work, skills, and education through a clean, modern UI with smooth transitions.
 
-## Development server
+---
 
-To start a local development server, run:
+## Preview
 
-```bash
-ng serve
-```
+<img width="1606" height="947" alt="my pf" src="https://github.com/user-attachments/assets/28634144-e53f-4940-896e-a87976de367a" />
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+##  Technologies Used
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Angular 22**
+- **TypeScript**
+- **TailwindCSS**
+- **CSS Animations**
+- **IntersectionObserver API** for scroll‑based animations
+- **Responsive Design**
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+##  Features
 
-To build the project run:
+### 🎨 Modern UI
+- macOS‑style window layout with interactive buttons  
+- Animated gradient backgrounds  
+- Smooth hover effects and transitions  
+- Glassmorphism elements 
 
-```bash
-ng build
-```
+### 🧩 Sections Included
+- **About** — Personal introduction + resume download  
+- **Skills** — Animated grid with staggered appearance  
+- **Projects** — Scroll‑triggered reveal animations  
+- **Education** — Timeline‑style cards with fade‑in effects  
+- **Sidebar** — Smooth navigation between sections  
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### ⚡ Animations
+- Fade‑in + slide‑up on scroll  
+- Hover scaling on images and buttons  
+- Animated gradient backgrounds  
+- Smooth transitions across the entire UI  
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
